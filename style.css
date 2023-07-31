@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;600&family=Tektur&family=Unbounded:wght@300&display=swap');
+BODY {
+  background-color: #fff;
+  margin: 0;
+}
+.header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  padding-top: 4px;
+}
+.logo {
+  width: 60px;
+  text-align: center;
+  margin: auto;
+}
+.cellar {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.dash {
+  height: 1px;
+  background-color: #000000;
+  opacity: 0.2;
+  padding: 0;
+}
+.act-text-one {
+  font-size: 55px;
+  color: #000000;
+  font-family: 'Handjet', cursive;
+  font-weight: 600;
+  padding-top: 25px;
+}
+.act-text-two {
+  font-size: 25px;
+  color: #000000;
+  font-family: 'Handjet', cursive;
+  font-weight: 300;
+  padding-top: 25px;
+}
+.act-text-three {
+  font-size: 35px;
+  color: #000000;
+  font-family: 'Handjet', cursive;
+  font-weight: 600;
+  padding-top: 25px;
+  text-decoration: none;
+}
+.act-text-three:hover {
+  text-decoration: underline;
+}
+.act-text {
+  height: inherit;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-top: 60px;
+    padding-right: 25px;
+}
+.act-img {
+  padding-top: 40px;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+}
+.act-flats {
+  height: inherit;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  text-align: right;
+  background-color: #fff;
+  box-shadow: 0em 0em 10px rgba(122,122,122,0.1);
+}
+.act-flats-one {
+  font-size: 35px;
+  color: #000000;
+  text-align: right;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  padding-top: 25px;
+}
+.act-flats-two {
+  font-size: 15px;
+  color: #000000;
+  text-align: right;
+  font-family: 'Unbounded', cursive;
+  font-weight: 300;
+  padding-top: 25px;
+}
+.act-flats-three {
+  font-size: 20px;
+  color: #000000;
+  text-align: right;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  padding-top: 25px;
+}
+.act-num-one {
+  font-size: 35px;
+  color: #000000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  padding-top: 25px;
+}
+.act-num-two {
+  font-size: 15px;
+  color: #000000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 300;
+  padding-top: 25px;
+}
+.act-num-three {
+  font-size: 20px;
+  color: #000000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  padding-top: 25px;
+}
+.act-num {
+  height: inherit;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-top: 60px;
+    padding-right: 25px;
+}
+.flat {
+  height: 250px;
+}
+.num-three {
+  font-size: 15px;
+  text-align: center;
+  color: #000000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  padding-top: 25px;
+}
+.oau {
+  padding-left: 100px;
+}
