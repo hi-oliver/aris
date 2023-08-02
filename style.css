@@ -8,16 +8,32 @@ BODY {
   text-align: center;
   position: fixed;
   width: 100%;
-  margin: auto;
   background-color: #fff;
   padding-top: 2px;
   z-index: 1000;
+  vertical-align: middle;
+}
+.back-obj {
+  width: 100%;
+}
+.back {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Unbounded', cursive;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
 }
 .inst {
   font-family: 'Unbounded', cursive;
 }
 .logo {
   width: 60px;
+  text-align: center;
+  margin: 2px 2px 2px 2px;
+}
+.burger {
+  width: 40px;
   text-align: center;
   margin: 2px 2px 2px 2px;
 }
@@ -86,7 +102,7 @@ BODY {
 }
 .standart-1 {
   margin: 0px 10px 0px 10px;
-  background-color: #B6B6B6;
+  background-color: #1B1948;
   padding-left: 25px;
   padding-top: 65px;
   padding-right: 25px;
@@ -175,16 +191,51 @@ BODY {
 }
 .hello_url {
   text-decoration: none;
+  animation: pushme 7s infinite linear;
+}
+@keyframes pushme {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .hello_url:hover {
   text-decoration: underline;
   opacity: 0.5;
+  animation: none;
 }
 .index-img {
   padding-top: 10px;
   height: 150px;
   text-align: center;
   vertical-align: bottom;
+  animation: rising 1s linear;
+}
+@keyframes rising {
+  0% {
+    opacity: 0;
+    scale: 1.1;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.iimg {
+  animation: rot 3s ease-in-out;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .flats-img {
   padding-top: 10px;
