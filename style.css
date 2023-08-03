@@ -107,6 +107,30 @@ BODY {
   padding-top: 65px;
   padding-right: 25px;
 }
+.standart-2 {
+  margin: 0px 10px 0px 10px;
+  background-color: #000;
+  padding-left: 25px;
+  padding-top: 65px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+.standart-3 {
+  margin: 10px 10px 10px 10px;
+  background-color: #000;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+.standart-4 {
+  margin: 10px 10px 10px 10px;
+  background: linear-gradient(to bottom left, rgba(255, 0, 230), rgba(0, 133, 255));
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
 .house-ad {
   margin: 0px 10px 0px 10px;
   background-color: #fff;
@@ -115,11 +139,14 @@ BODY {
   padding-right: 25px;
 }
 .flats {
-  margin: 10px 10px 0px 10px;
+  margin: 0px 10px 0px 10px;
   background-color: #fff;
   padding-left: 25px;
   padding-top: 0px;
   padding-right: 25px;
+}
+.anchor-flats {
+  padding-top: 60px;
 }
 .flats-with-shadow {
   box-shadow: 0em 0em 15px rgba(122,122,122,0.3);
@@ -175,6 +202,12 @@ BODY {
   color: #000;
   font-family: 'Unbounded', cursive;
   font-weight: 400;
+}
+.mg-descr {
+  font-size: 13px;
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 300;
 }
 .flats-old-price {
   font-size: 12px;
@@ -259,4 +292,19 @@ BODY {
 }
 .oau {
   padding-left: 100px;
+}
+.many-rooms {
+  padding: 25px 25px 25px 25px;
+}
+.many-rooms-url {
+  font-size: 13px;
+  text-align: center;
+  color: #4F4F4F;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  text-decoration: none;
+}
+.many-rooms-url:hover {
+  text-decoration: underline;
+  opacity: 0.5;
 }
