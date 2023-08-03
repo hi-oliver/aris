@@ -3,6 +3,7 @@ BODY {
   background-color: #fff;
   margin: 0;
   text-align: center;
+  scroll-behavior: smooth;
 }
 .header {
   text-align: center;
