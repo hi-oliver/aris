@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;600&family=Tektur&family=Unbounded:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;600&family=Tektur&family=Unbounded:wght@200;300&display=swap');
 BODY {
   background-color: #fff;
   margin: 0;
@@ -75,8 +75,7 @@ BODY {
   transition: transform .3s;
 }
 .menu-option-div:hover {
-  transform: scale(1.01);
-  opacity: 0.8;
+  transform: scale(1.025);
 }
 
 .cellar {
@@ -124,8 +123,32 @@ BODY {
 .hello {
   margin: 0px 10px 0px 10px;
   background: linear-gradient(to bottom left, rgba(255, 0, 230), rgba(0, 133, 255));
+  background-position: center;
   padding-left: 25px;
   padding-top: 65px;
+  padding-right: 25px;
+  animation: welcome-to-aris 7s ease-in-out infinite;
+  background-size: 300%;
+}
+@keyframes welcome-to-aris {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 170%;
+  }
+  60% {
+    background-position: 100% 120%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.welcome_01 {
+  margin: 10px 10px 0px 10px;
+  background: radial-gradient(at 50% 100%, rgba(61, 61, 61) 50px, rgba(31, 31, 31) 40%, rgba(61, 61, 61) 100%);
+  padding-left: 25px;
+  padding-top: 25px;
   padding-right: 25px;
 }
 .welcome_02 {
@@ -158,6 +181,7 @@ BODY {
   padding-left: 25px;
   padding-top: 85px;
   padding-right: 25px;
+  animation: welcome-to-aris 7s ease-in-out infinite;
 }
 .standart-2 {
   margin: 0px 10px 0px 10px;
@@ -165,7 +189,7 @@ BODY {
   padding-left: 25px;
   padding-top: 65px;
   padding-right: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 .standart-3 {
   margin: 10px 10px 10px 10px;
@@ -183,11 +207,35 @@ BODY {
   padding-right: 25px;
   padding-bottom: 10px;
 }
+.standart-5 {
+  margin: 0px 10px 0px 10px;
+  background: linear-gradient(to bottom left, rgba(61, 61, 61), rgba(31, 31, 31));
+  padding-left: 25px;
+  padding-top: 65px;
+  padding-right: 25px;
+  padding-bottom: 0px;
+}
+.standart-6 {
+  margin: 10px 10px 10px 10px;
+  background-color: #fff;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+.standart-7 {
+  margin: 0px 10px 0px 10px;
+  background: linear-gradient(to bottom left, rgba(61, 61, 61), rgba(31, 31, 31));
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 0px;
+}
 .house-ad {
   margin: 0px 10px 0px 10px;
   background-color: #fff;
   padding-left: 25px;
-  padding-top: 65px;
+  padding-top: 85px;
   padding-right: 25px;
 }
 .flats {
@@ -198,7 +246,7 @@ BODY {
   padding-right: 25px;
 }
 .anchor-flats {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 .flats-with-shadow {
   box-shadow: 0em 0em 10px rgba(122,122,122,0.2);
@@ -217,6 +265,12 @@ BODY {
 .standart-title {
   font-size: 35px;
   color: #fff;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+}
+.black-title {
+  font-size: 35px;
+  color: #000;
   font-family: 'Unbounded', cursive;
   font-weight: 600;
 }
@@ -244,9 +298,21 @@ BODY {
   font-family: 'Unbounded', cursive;
   font-weight: 400;
 }
+.black-descr {
+  font-size: 15px;
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 400;
+}
 .flats-descr {
   font-size: 15px;
   color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 400;
+}
+.complex-naming {
+  font-size: 15px;
+  color: #3E3E3E;
   font-family: 'Unbounded', cursive;
   font-weight: 400;
 }
@@ -271,7 +337,7 @@ BODY {
 }
 .flats-price {
   font-size: 12px;
-  color: #000;
+  color: #1400ff;
   font-family: 'Unbounded', cursive;
   font-weight: 600;
 }
@@ -329,6 +395,10 @@ BODY {
   text-align: center;
   vertical-align: bottom;
 }
+.partners-img {
+  max-width: 150px;
+  max-height: 100px;
+}
 .ad-img {
   padding-top: 10px;
   max-width: 300px;
@@ -364,4 +434,112 @@ BODY {
 }
 .room-keeper {
   margin: 25px 25px 25px 25px;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.companies-list {
+  font-size: 13px;
+  text-align: center;
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 300;
+}
+.column-1 {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  animation: column1 6s ease-in-out;
+}
+@keyframes column1 {
+  0% {
+    height: 0px;
+  }
+  60% {
+    height: 30px;
+  }
+  70% {
+    height: 10px;
+  }
+  80% {
+    height: 30px;
+  }
+}
+.column-2 {
+  display: inline-block;
+  height: 70px;
+  width: 30px;
+  background: #fff;
+  margin: 0px 10px 0px 10px;
+  animation: column2 6s ease-in-out;
+}
+@keyframes column2 {
+  0% {
+    height: 0px;
+  }
+  60% {
+    height: 70px;
+  }
+  70% {
+    height: 50px;
+  }
+  80% {
+    height: 70px;
+  }
+}
+.column-3 {
+  display: inline-block;
+  height: 110px;
+  width: 30px;
+  background: #fff;
+  margin-right: 10px;
+  animation: column3 6s ease-in-out;
+}
+@keyframes column3 {
+  0% {
+    height: 0px;
+  }
+  60% {
+    height: 110px;
+  }
+  70% {
+    height: 80px;
+  }
+  80% {
+    height: 110px;
+  }
+}
+.column-4 {
+  display: inline-block;
+  height: 170px;
+  width: 30px;
+  background: #fff;
+  animation: column4 6s ease-in-out;
+}
+.column-ghost {
+  display: inline-block;
+  height: 170px;
+  width: 1px;
+}
+@keyframes column4 {
+  0% {
+    height: 0px;
+  }
+  60% {
+    height: 170px;
+  }
+  70% {
+    height: 150px;
+  }
+  80% {
+    height: 170px;
+  }
+}
+.column-keeper {
+  height: 170px;
 }
