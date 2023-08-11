@@ -75,7 +75,7 @@ BODY {
   transition: transform .3s;
 }
 .menu-option-div:hover {
-  transform: scale(1.025);
+  transform: scale(1.01);
 }
 
 .cellar {
@@ -125,7 +125,7 @@ BODY {
   background: linear-gradient(to bottom left, rgba(255, 0, 230), rgba(0, 133, 255));
   background-position: center;
   padding-left: 25px;
-  padding-top: 65px;
+  padding-top: 70px;
   padding-right: 25px;
   animation: welcome-to-aris 7s ease-in-out infinite;
   background-size: 300%;
@@ -179,7 +179,7 @@ BODY {
   background-color: #1B1948;
   background: linear-gradient(to bottom right, rgba(27, 25, 72), rgba(31, 31, 31));
   padding-left: 25px;
-  padding-top: 85px;
+  padding-top: 95px;
   padding-right: 25px;
   animation: welcome-to-aris 7s ease-in-out infinite;
 }
@@ -244,13 +244,16 @@ BODY {
   padding-left: 25px;
   padding-top: 0px;
   padding-right: 25px;
+
 }
 .anchor-flats {
-  padding-top: 80px;
+  padding-top: 90px;
 }
 .flats-with-shadow {
   box-shadow: 0em 0em 10px rgba(122,122,122,0.2);
   transition: transform .2s;
+  max-width: 310px;
+  margin: auto;
 }
 .flats-with-shadow:hover {
   transform: scale(1.05);
@@ -314,7 +317,29 @@ BODY {
   font-size: 15px;
   color: #3E3E3E;
   font-family: 'Unbounded', cursive;
+  font-weight: 600;
+}
+.complex-class {
+  font-size: 11px;
+  color: #fff;
+  font-family: 'Unbounded', cursive;
   font-weight: 400;
+  background-color: #984343;
+  padding: 3px 3px 3px 3px;
+  max-width: 80px;
+  margin: 0px 10px 10px 10px;
+
+}
+.complex-class-2 {
+  font-size: 11px;
+  color: #fff;
+  font-family: 'Unbounded', cursive;
+  font-weight: 400;
+  background-color: #434998;
+  padding: 3px 3px 3px 3px;
+  max-width: 80px;
+  margin: 0px 10px 10px 10px;
+
 }
 .ad-descr {
   font-size: 15px;
@@ -337,7 +362,7 @@ BODY {
 }
 .flats-price {
   font-size: 12px;
-  color: #1400ff;
+  color: #434998;
   font-family: 'Unbounded', cursive;
   font-weight: 600;
 }
