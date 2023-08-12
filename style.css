@@ -120,6 +120,17 @@ BODY {
   padding: 0;
   margin: 13px 25px 13px 25px;
 }
+.hello-1 {
+  margin: auto;
+  max-width: 320px;
+  background: #fff;
+  background-position: center;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  animation: welcome-to-aris 7s ease-in-out infinite;
+  background-size: 300%;
+}
 .hello {
   margin: 0px 10px 0px 10px;
   background: linear-gradient(to bottom left, rgba(255, 0, 230), rgba(0, 133, 255));
@@ -265,6 +276,13 @@ BODY {
   font-family: 'Unbounded', cursive;
   font-weight: 600;
 }
+.hello-title-1 {
+  font-size: 25px;
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  text-align: left;
+}
 .standart-title {
   font-size: 35px;
   color: #fff;
@@ -314,10 +332,19 @@ BODY {
   font-weight: 400;
 }
 .complex-naming {
-  font-size: 15px;
+  font-size: 20px;
   color: #3E3E3E;
   font-family: 'Unbounded', cursive;
   font-weight: 600;
+  padding: 10px 10px 10px 20px;
+  text-align: left;
+}
+.complex-info {
+  font-size: 11px;
+  color: #888888;
+  font-family: 'Unbounded', cursive;
+  font-weight: 400;
+  text-align: left;
 }
 .complex-class {
   font-size: 11px;
@@ -334,12 +361,21 @@ BODY {
   font-size: 11px;
   color: #fff;
   font-family: 'Unbounded', cursive;
-  font-weight: 400;
-  background-color: #434998;
+  font-weight: 500;
+  background-color: #46C563;
   padding: 3px 3px 3px 3px;
-  max-width: 80px;
-  margin: 0px 10px 10px 10px;
-
+  max-width: 170px;
+  margin: 0px 10px 0px 10px;
+}
+.complex-class-3 {
+  font-size: 11px;
+  color: #fff;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+  background-color: #DC4545;
+  padding: 3px 3px 3px 3px;
+  max-width: 170px;
+  margin: 10px 10px 0px 10px;
 }
 .ad-descr {
   font-size: 15px;
@@ -370,6 +406,17 @@ BODY {
   text-decoration: none;
   animation: pushme 7s infinite linear;
 }
+.flats-href {
+  text-decoration: none;
+  color: #787878;
+  font-size: 12px;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+}
+.flats-href:hover {
+  text-decoration: underline;
+}
+
 @keyframes pushme {
   0% {
     opacity: 1;
@@ -416,9 +463,62 @@ BODY {
 }
 .flats-img {
   padding-top: 10px;
-  width: 150px;
-  text-align: center;
+  max-height: 220px;
+  max-height: 170px;
+  text-align: right;
   vertical-align: bottom;
+}
+.photokeeper {
+  text-align: left;
+}
+.selector-of-flats {
+  background-color: #D2E3FF;
+  font-size: 12px;
+  font-family: 'Unbounded', cursive;
+  font-weight: 700;
+  width: 230px;
+  height: 15px;
+  padding: 10px 10px 10px 10px;
+  vertical-align: middle;
+}
+.selector-of-flats-url {
+  text-decoration: none;
+  vertical-align: middle;
+  color: #336CCA;
+}
+.selector-of-flats:hover {
+  background-color: #336CCA;
+  transition: 0.5s;
+  color: #D2E3FF;
+}
+#apart {
+  color: #336CCA;
+  padding-left: 20px;
+}
+#price {
+  color: #000;
+  padding-left: 10px;
+}
+#to {
+  color: #336CCA;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.flats-bottom-url {
+  background-color: #fff;
+  font-size: 10px;
+  text-decoration: none;
+  font-family: 'Unbounded', cursive;
+  font-weight: 700;
+  max-width: 310px;
+  height: 15px;
+  padding: 10px 10px 10px 10px;
+  vertical-align: middle;
+}
+.flats-bottom-url:hover {
+  transition: 0.5s;
+  background-color: #D2E3FF;
+
 }
 .partners-img {
   max-width: 150px;
