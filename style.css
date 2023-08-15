@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;600&family=Tektur&family=Unbounded:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Handjet:wght@300;600&family=Tektur&family=Unbounded:wght@200;300&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
 BODY {
   background-color: #fff;
   margin: 0;
@@ -289,11 +293,120 @@ BODY {
   font-family: 'Unbounded', cursive;
   font-weight: 600;
 }
+.timeteka-text {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Bungee Shade', cursive;
+}
+.timeteka h1 {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 .black-title {
   font-size: 35px;
   color: #000;
   font-family: 'Unbounded', cursive;
   font-weight: 600;
+}
+.history-title {
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+  float: right;
+}
+.history-descr {
+  padding-top: 10px;
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 300;
+  font-size: 13px;
+  display: inline-block;
+  text-align: right;
+  max-width: 200px;
+  margin-right: 10px;
+  float: right;
+}
+.history-year-title {
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 300;
+  font-size: 80px;
+  transform: rotate(90deg);
+  transform-origin: left center;
+  margin-left: 30px;
+  opacity: 0.1;
+  display: inline-block;
+  float: left;
+}
+.keep-history {
+  max-width: 320px;
+  margin: auto;
+}
+.stats {
+  margin: auto;
+  max-width: 320px;
+}
+.company-stats-title {
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10px;
+}
+.company-stats-descr {
+  padding-top: 5px;
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  font-size: 10px;
+  text-align: left;
+  margin-left: 10px;
+  opacity: 0.7;
+}
+.slider-stats-back {
+  margin: 10px 10px 0px 10px;
+  max-width: 300px;
+  height: 30px;
+  background-color: #E3E3E3;
+  border-radius: 40px;
+  vertical-align: middle;
+}
+.slider-stats-front {
+  vertical-align: middle;
+  height: 30px;
+  background: linear-gradient(to right, rgba(25, 21, 235), rgba(232, 21, 235));
+  border-radius: 40px;
+}
+.stats-info {
+  vertical-align: middle;
+  padding-top: 6px;
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Unbounded', cursive;
+  font-weight: 300;
 }
 .flats-title {
   font-size: 30px;
@@ -578,73 +691,69 @@ BODY {
   display: inline-block;
   height: 30px;
   width: 30px;
-  background: #fff;
-  animation: column1 6s ease-in-out;
+  border: 2px solid;
+  border-bottom: none;
+  border-color: #fff;
+  animation: column1 1s ease-in-out;
 }
 @keyframes column1 {
   0% {
     height: 0px;
+    opacity: 0.7;
   }
-  60% {
+  100% {
     height: 30px;
-  }
-  70% {
-    height: 10px;
-  }
-  80% {
-    height: 30px;
+    opacity: 1;
   }
 }
 .column-2 {
   display: inline-block;
   height: 70px;
   width: 30px;
-  background: #fff;
+  border: 2px solid;
+  border-color: #fff;
+  border-bottom: none;
   margin: 0px 10px 0px 10px;
-  animation: column2 6s ease-in-out;
+  animation: column2 1.5s ease-in-out;
 }
 @keyframes column2 {
   0% {
     height: 0px;
+    opacity: 0.7;
   }
-  60% {
+  100% {
     height: 70px;
-  }
-  70% {
-    height: 50px;
-  }
-  80% {
-    height: 70px;
+    opacity: 1;
   }
 }
 .column-3 {
   display: inline-block;
   height: 110px;
   width: 30px;
-  background: #fff;
+  border: 2px solid;
+  border-color: #fff;
+  border-bottom: none;
   margin-right: 10px;
-  animation: column3 6s ease-in-out;
+  animation: column3 2s ease-in-out;
 }
 @keyframes column3 {
   0% {
     height: 0px;
+    opacity: 0.7;
   }
-  60% {
+  100% {
     height: 110px;
-  }
-  70% {
-    height: 80px;
-  }
-  80% {
-    height: 110px;
+    opacity: 1;
   }
 }
 .column-4 {
   display: inline-block;
-  height: 170px;
+  height: 150px;
   width: 30px;
-  background: #fff;
-  animation: column4 6s ease-in-out;
+  border: 2px solid;
+  border-color: #fff;
+  border-bottom: none;
+  animation: column4 2.5s ease-in-out;
 }
 .column-ghost {
   display: inline-block;
@@ -654,15 +763,11 @@ BODY {
 @keyframes column4 {
   0% {
     height: 0px;
+    opacity: 0.7;
   }
-  60% {
-    height: 170px;
-  }
-  70% {
+  100% {
     height: 150px;
-  }
-  80% {
-    height: 170px;
+    opacity: 1;
   }
 }
 .column-keeper {
