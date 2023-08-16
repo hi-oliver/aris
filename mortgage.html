@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
     <div class="header">
 
       <table class="back-obj">
@@ -72,7 +73,30 @@
 
         <a class="standart-title">Досрочное погашение</a>
         <br><a class="standart-descr">Выбрав TimeТеку, вы сами корректируете свой график платежей. Можно совмещать, сокращать и увеличивать платежи.</a>
-        <br><img class="index-img" src="img/st_17.png">
+
+
+<script type="text/javascript">
+function mortgage_element1_plus() {
+  var num = document.getElementById("mortgageone").innerHTML;
+  document.getElementById("mortgageone").innerHTML = (Number(num) + 100);
+}
+function mortgage_element1_minus() {
+  var num = document.getElementById("mortgageone").innerHTML;
+  document.getElementById("mortgageone").innerHTML = (Number(num) - 100);
+}
+</script>
+
+        <div class="mortgage-plus-minus">
+          <div class="money_keeper" id="mortgageone">
+            16200
+          </div>
+          <div class="plus"  id="mortgage_2element" onclick="mortgage_element1_plus()">
+            +
+          </div>
+          <br><div class="minus" id="mortgage_2element" onclick="mortgage_element1_minus()">
+            -
+          </div>
+        </div>
 
     </div>
     <div class="standart-4">

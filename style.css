@@ -300,13 +300,13 @@ BODY {
 }
 .timeteka h1 {
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: .15em solid blue;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
   animation:
     typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    blink-caret .5s step-end 7;
 }
 
 
@@ -318,8 +318,9 @@ BODY {
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange }
+  50% { border-color: blue }
 }
+
 .black-title {
   font-size: 35px;
   color: #000;
@@ -772,4 +773,73 @@ BODY {
 }
 .column-keeper {
   height: 170px;
+}
+.money_keeper {
+  padding-top: 35px;
+  font-size: 50px;
+  text-align: center;
+  background-image: linear-gradient(to left, rgba(25, 21, 235), rgba(232, 21, 235));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-family: 'Unbounded', cursive;
+  display: inline-block;
+}
+.plus {
+  margin-left: 15px;
+  width: 37px;
+  height: 37px;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to right, rgba(25, 21, 235), rgba(232, 21, 235));
+  font-family: 'Unbounded', cursive;
+  display: inline-block;
+  border-radius: 20px;
+  float: right;
+  transition: transform 0.2s;
+}
+.minus {
+  margin-left: 15px;
+  width: 37px;
+  height: 37px;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to right, rgba(25, 21, 235), rgba(232, 21, 235));
+  font-family: 'Unbounded', cursive;
+  display: inline-block;
+  border-radius: 20px;
+  float: right;
+  transition: transform 0.2s;
+}
+.minus:hover {
+  opacity: 0.9;
+  transform: scale(0.95);
+}
+.plus:hover {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+.mortgage-plus-minus {
+  padding: 20px 0px 40px 0px;
+  max-width: 320px;
+  margin: auto;
+}
+.animation_changed {
+  animation: changed 0.2s ease-in-out;
+}
+@keyframes changed {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
