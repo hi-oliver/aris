@@ -640,6 +640,12 @@ BODY {
   text-align: right;
   vertical-align: bottom;
 }
+.houses-img {
+  max-width: 220px;
+  padding-top: 10px;
+  text-align: right;
+  vertical-align: bottom;
+}
 .photokeeper {
   text-align: left;
 }
