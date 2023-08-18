@@ -270,6 +270,9 @@ BODY {
   max-width: 310px;
   margin: auto;
 }
+.fws-general {
+  padding: 0px 0px 110px 0px;
+}
 .flats-with-shadow:hover {
   transform: scale(1.05);
   box-shadow: 0em 0em 10px rgba(122,122,122,0.4);
@@ -453,6 +456,53 @@ BODY {
   padding: 10px 10px 10px 20px;
   text-align: left;
 }
+.complex-naming-in-aparts {
+  font-size: 15px;
+  color: #3E3E3E;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  padding: 5px 10px 10px 20px;
+  text-align: left;
+  display: inline-block;
+  float: left;
+}
+.apart-naming-in-aparts {
+  font-size: 12px;
+  color: #3E3E3E;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+  padding: 5px 10px 10px 20px;
+  text-align: left;
+  display: inline-block;
+  float: left;
+}
+.table-aparts-info-keeper {
+  padding: 5px 10px 10px 20px;
+  display: inline-block;
+  float: left;
+}
+.table-aparts-info {
+  font-size: 11px;
+  color: #888888;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+}
+.table-aparts-info td {
+  padding: 5px 0px 5px 0px;
+  border-bottom: 1px dotted;
+}
+#left {
+  text-align: left;
+}
+#right {
+  text-align: right;
+  padding-left: 10px;
+}
+.image-in-aparts {
+  display: inline-block;
+  padding: 0px 10px 5px 0px;
+  float: right;
+}
 .complex-info {
   font-size: 11px;
   color: #888888;
@@ -460,16 +510,18 @@ BODY {
   font-weight: 400;
   text-align: left;
 }
+.complex-class-keeper {
+  text-align: left;
+}
 .complex-class {
   font-size: 11px;
   color: #fff;
   font-family: 'Unbounded', cursive;
   font-weight: 400;
-  background-color: #984343;
-  padding: 3px 3px 3px 3px;
-  max-width: 80px;
-  margin: 0px 10px 10px 10px;
-
+  padding: 3px 5px 3px 5px;
+  max-width: 150px;
+  margin: 0px 10px 0px 10px;
+  display: inline-block;
 }
 .complex-class-2 {
   font-size: 11px;
@@ -515,6 +567,14 @@ BODY {
   color: #434998;
   font-family: 'Unbounded', cursive;
   font-weight: 600;
+}
+.flats-price-aparts {
+  font-size: 12px;
+  color: #434998;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
 }
 .hello_url {
   text-decoration: none;
@@ -577,8 +637,6 @@ BODY {
 }
 .flats-img {
   padding-top: 10px;
-  max-height: 220px;
-  max-height: 170px;
   text-align: right;
   vertical-align: bottom;
 }
