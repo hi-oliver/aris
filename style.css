@@ -190,13 +190,23 @@ BODY {
   padding-right: 25px;
 }
 .standart-1 {
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px 10px 10px;
   background-color: #1B1948;
-  background: linear-gradient(to bottom right, rgba(27, 25, 72), rgba(31, 31, 31));
+  background: linear-gradient(to bottom right, #D875E8, #6D4CE8);
   padding-left: 25px;
   padding-top: 95px;
   padding-right: 25px;
+  padding-bottom: 5px;
   animation: welcome-to-aris 7s ease-in-out infinite;
+}
+.standart-1Extra {
+  margin: 0px 10px 10px 10px;
+  background-color: #1B1948;
+  background: linear-gradient(to bottom left, #E8804C, #E84C4C, #E84CE8);
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 5px;
 }
 .standart-2 {
   margin: 0px 10px 0px 10px;
