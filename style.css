@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Handjet:wght@300;600&family=Tektur&family=Unbounded:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Inconsolata&family=Handjet:wght@300;600&family=Tektur&family=Unbounded:wght@200;300&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -117,6 +117,9 @@ BODY {
   opacity: 0.2;
   padding: 0;
 }
+.dash-mortgage {
+  padding: 2px 0px 2px 0px;
+}
 .menu-dash {
   height: 0.7px;
   background-color: #000000;
@@ -227,6 +230,31 @@ BODY {
 .standart-4 {
   margin: 10px 10px 10px 10px;
   background: linear-gradient(to bottom left, rgba(255, 0, 230), rgba(0, 133, 255));
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+.standart-4Extra {
+  margin: 10px 10px 10px 10px;
+  background: linear-gradient(to bottom left, #E8804C, #E84C4C, #E84CE8);
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+.standart-4Extra-2 {
+  margin: 10px 10px 10px 10px;
+  background: linear-gradient(to top right, #D33131, #E8C54C);
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+.standart-4Extra-3 {
+  margin: 10px 10px 10px 10px;
+  background: linear-gradient(to bottom right, #31D39D, #3198D3 );
   padding-left: 25px;
   padding-top: 25px;
   padding-right: 25px;
@@ -464,6 +492,32 @@ BODY {
   font-family: 'Unbounded', cursive;
   font-weight: 600;
   padding: 10px 10px 10px 20px;
+  text-align: left;
+}
+.mortgage-naming {
+  font-size: 20px;
+  color: #3E3E3E;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  padding: 10px 10px 10px 20px;
+  text-align: left;
+}
+.mortgagepercents {
+  font-size: 11px;
+  color: #3E3E3E;
+  opacity: 0.8;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  padding: 2px 10px 10px 20px;
+  text-align: left;
+}
+.mortgagedescr {
+  font-size: 11px;
+  color: #3E3E3E;
+  opacity: 0.9;
+  font-family: 'Unbounded', cursive;
+  font-weight: 300;
+  padding: 2px 10px 10px 20px;
   text-align: left;
 }
 .complex-naming-in-aparts {
@@ -869,14 +923,14 @@ BODY {
 }
 .money_keeper {
   padding-top: 35px;
-  font-size: 50px;
+  font-size: 75px;
   text-align: center;
   background-image: linear-gradient(to left, rgba(25, 21, 235), rgba(232, 21, 235));
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: 600;
-  font-family: 'Unbounded', cursive;
+  font-family: 'Inconsolata', monospace;
   display: inline-block;
 }
 .plus {
@@ -893,6 +947,18 @@ BODY {
   border-radius: 20px;
   float: right;
   transition: transform 0.2s;
+  animation: mortgage_pushme 2s ease-in-out infinite;
+}
+@keyframes mortgage_pushme {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
 }
 .minus {
   margin-left: 15px;
@@ -908,6 +974,7 @@ BODY {
   border-radius: 20px;
   float: right;
   transition: transform 0.2s;
+  animation: mortgage_pushme 2s ease-in-out infinite;
 }
 .minus:hover {
   opacity: 0.9;
@@ -935,4 +1002,9 @@ BODY {
   100% {
     transform: scale(1);
   }
+}
+.mortgage_main_background {
+  background: linear-gradient(to bottom left, rgba(255, 0, 230), rgba(0, 133, 255));
+  padding-bottom: 3px;
+  margin-bottom: 10px;
 }
