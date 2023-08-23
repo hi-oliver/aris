@@ -617,6 +617,27 @@ BODY {
   max-width: 170px;
   margin: 0px 10px 0px 10px;
 }
+.complex-class-5 {
+  font-size: 11px;
+  color: #fff;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+  background-color: #868686;
+  padding: 3px 3px 3px 3px;
+  max-width: 170px;
+  margin: 0px 10px 0px 10px;
+}
+.complex-class-6 {
+  font-size: 11px;
+  color: #fff;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+  background-color: #7E6047;
+  padding: 3px 3px 3px 3px;
+  max-width: 170px;
+  margin: 10px 10px 0px 10px;
+}
+
 .ad-descr {
   font-size: 15px;
   color: #000;
