@@ -127,6 +127,17 @@ BODY {
   padding: 0;
   margin: 13px 25px 13px 25px;
 }
+.hello-puto {
+  margin: auto;
+  margin-bottom: 0;
+  max-width: 320px;
+  background: #CBB7AB;
+  background-position: center;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
 .hello-1 {
   margin: auto;
   max-width: 320px;
@@ -143,7 +154,7 @@ BODY {
   background: linear-gradient(to bottom left, rgba(255, 0, 230), rgba(0, 133, 255));
   background-position: center;
   padding-left: 25px;
-  padding-top: 70px;
+  padding-top: 10px;
   padding-right: 25px;
   animation: welcome-to-aris 7s ease-in-out infinite;
   background-size: 300%;
@@ -289,6 +300,13 @@ BODY {
   background-color: #fff;
   padding-left: 25px;
   padding-top: 85px;
+  padding-right: 25px;
+}
+.house-ad-extra {
+  margin: 0px 10px 0px 10px;
+  background-color: #fff;
+  padding-left: 25px;
+  padding-top: 5px;
   padding-right: 25px;
 }
 .flats {
@@ -461,6 +479,11 @@ BODY {
   color: #000;
   font-family: 'Unbounded', cursive;
   font-weight: 600;
+}
+.ad-title-extra {
+  font-size: 30px;
+  font-family: 'Unbounded', cursive;
+  font-weight: 400;
 }
 .hello-descr {
   font-size: 15px;
