@@ -822,7 +822,9 @@ BODY {
 }
 .ad-img {
   padding-top: 10px;
-  max-width: 300px;
+  max-width: 210px;
+  min-width: 100px;
+  height: auto;
   text-align: center;
   vertical-align: bottom;
 }
@@ -1051,4 +1053,48 @@ BODY {
   background: linear-gradient(to bottom left, rgba(255, 0, 230), rgba(0, 133, 255));
   padding-bottom: 3px;
   margin-bottom: 10px;
+}
+
+.slider-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  max-width: 320px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+  display: inline-block;
+  float: left;
+  z-index: 20
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height:30px;
+  background-color: rgba(255,255,255, 0.7);
+  backdrop-filter: blur(3px);
+  border: none;
+  font-size: 24px;
+  color: black;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
 }
