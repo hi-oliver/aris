@@ -36,9 +36,9 @@ BODY {
   font-family: 'Unbounded', cursive;
 }
 .logo {
-  width: 60px;
+  width: 100px;
   text-align: center;
-  margin: 2px 2px 2px 2px;
+  margin: 4px 2px 2px 2px;
 }
 .burger {
   width: 40px;
