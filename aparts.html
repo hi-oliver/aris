@@ -67,7 +67,10 @@
       </div>
       <div class="menu-option-div">
       <a class="menu-option" href="/aris/about.html">О компании</a></div>
-
+      <div class="menu-dash">
+      </div>
+      <div class="menu-option-div">
+      <a class="menu-option" href="/aris/states.html">Отчёт о строительстве</a></div>
     </div>
 
     </div>
@@ -82,7 +85,7 @@
 
             <a class="standart-title">Отделка ARIS</a>
             <br><a class="standart-descr">Все квартиры ARIS передаются с полной отделкой, укомплектованным санузлом и подготовленной кухней.</a>
-            <!-- <a class="hello-descr hello_url" href="/aris/repair.html">Узнать больше ›</a> -->
+            <br><a class="hello-descr hello_url" style="color: #fff; animation: none" href="#otdelka">Посмотреть ›</a>
             <br><img class="index-img" src="img/st_16.png">
         </div>
         <div class="many-rooms">
@@ -241,7 +244,7 @@
           <div class="complex-class" style="background-color: #1C95CA">Комфорт</div><div class="complex-class" style="margin: 0px 10px 10px 0px; background-color: #1AD937">Отделка в подарок!</div>
           </div>
           <div class="image-in-aparts"><img class="flats-img" src="img/fl_or6.png" style="height: 100px"></div>
-          <div class="complex-naming-in-aparts" style="text-align: left">ARIS. Поэма у <br>трёх озёр 2</div>
+          <div class="complex-naming-in-aparts" style="text-align: left">ARIS. Поэма<br>трёх стихий</div>
           <br><br><div class="apart-naming-in-aparts" style="text-align: left">1-к OR-0101</div>
           <br><div class="table-aparts-info-keeper">
 
@@ -396,7 +399,7 @@
           <div class="complex-class" style="background-color: #1C95CA">Комфорт</div><div class="complex-class" style="margin: 0px 10px 10px 0px; background-color: #1AD937">Отделка в подарок!</div>
           </div>
           <div class="image-in-aparts"><img class="flats-img" src="img/fl_tr2.png" style="width: 100px"></div>
-          <div class="complex-naming-in-aparts" style="text-align: left">ARIS. Поэма у <br>трёх озёр 2</div>
+          <div class="complex-naming-in-aparts" style="text-align: left">ARIS. Поэма<br>трёх стихий</div>
           <br><br><div class="apart-naming-in-aparts" style="text-align: left">2-к TR-EU01</div>
           <br><div class="table-aparts-info-keeper">
 
@@ -583,7 +586,7 @@
       <div class="complex-class" style="background-color: #1C95CA">Комфорт</div><div class="complex-class" style="margin: 0px 10px 10px 0px; background-color: #1AD937">Отделка в подарок!</div>
       </div>
       <div class="image-in-aparts"><img class="flats-img" src="img/fl_fr1.png" style="width: 100px"></div>
-      <div class="complex-naming-in-aparts" style="text-align: left">ARIS. Поэма у <br>трёх озёр 2</div>
+      <div class="complex-naming-in-aparts" style="text-align: left">ARIS. Поэма<br>трёх стихий</div>
       <br><br><div class="apart-naming-in-aparts" style="text-align: left">4-к FR-0101</div>
       <br><div class="table-aparts-info-keeper">
 
@@ -613,7 +616,7 @@
       <div class="complex-class" style="background-color: #1C95CA">Комфорт</div><div class="complex-class" style="margin: 0px 10px 10px 0px; background-color: #1AD937">Отделка в подарок!</div>
       </div>
       <div class="image-in-aparts"><img class="flats-img" src="img/fl_fr2.png" style="width: 100px"></div>
-      <div class="complex-naming-in-aparts" style="text-align: left">ARIS. Поэма у <br>трёх озёр 2</div>
+      <div class="complex-naming-in-aparts" style="text-align: left">ARIS. Поэма<br>трёх стихий</div>
       <br><br><div class="apart-naming-in-aparts" style="text-align: left">4-к FR-0102</div>
       <br><div class="table-aparts-info-keeper">
 
@@ -639,6 +642,60 @@
 
 
         </div>
+        <main>
+          <div class="house-ad-extra" id="otdelka">
+        <br><br><br><br>
+            <div class="hello-puto" style="background-color: #fff;">
+
+
+                <div class="hello-title-1" style="color: #40342D; font-weight: 300">Пример отделки от застройщика</div>
+          <br><div class="slider-container">
+          <div class="slider">
+            <img src="img/otdelka-sanuzel.png" alt="Отделка санузла">
+            <img src="img/otdelka-kuhnya.png" alt="Отделка кухни">
+            <img src="img/otdelka-koridor.png" alt="Отделка коридора">
+            <img src="img/otdelka-komnata.png" alt="Отделка комнаты">
+            <img src="img/otdelka-balkon.png" alt="Отделка балкона">
+          </div>
+          <div class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</div>
+          <div class="next-button" aria-label="Посмотреть следующий слайд">&gt</div>
+        </div>
+        </div>
+        </div>
+        </main>
+
+        <script>
+        const slider = document.querySelector('.slider');
+        const prevButton = document.querySelector('.prev-button');
+        const nextButton = document.querySelector('.next-button');
+        const slides = Array.from(slider.querySelectorAll('img'));
+        const slideCount = slides.length;
+        let slideIndex = 0;
+
+        prevButton.addEventListener('click', showPreviousSlide);
+        nextButton.addEventListener('click', showNextSlide);
+
+        function showPreviousSlide() {
+          slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+          updateSlider();
+        }
+
+        function showNextSlide() {
+          slideIndex = (slideIndex + 1) % slideCount;
+          updateSlider();
+        }
+
+        function updateSlider() {
+          slides.forEach((slide, index) => {
+            if (index === slideIndex) {
+              slide.style.display = 'block';
+            } else {
+              slide.style.display = 'none';
+            }
+          });
+        }
+
+        updateSlider();</script>
 
 
 

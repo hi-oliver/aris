@@ -436,6 +436,15 @@ BODY {
   text-align: left;
   margin-left: 10px;
 }
+.company-stats-house {
+  color: #000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 10px;
+}
 .company-stats-descr {
   padding-top: 5px;
   color: #000;
@@ -458,6 +467,12 @@ BODY {
   vertical-align: middle;
   height: 30px;
   background: linear-gradient(to right, rgba(25, 21, 235), rgba(232, 21, 235));
+  border-radius: 40px;
+}
+.slider-stats-front-2 {
+  vertical-align: middle;
+  height: 30px;
+  background: linear-gradient(to right, #1ACF08, #08CFCF);
   border-radius: 40px;
 }
 .stats-info {
