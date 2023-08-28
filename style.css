@@ -622,7 +622,7 @@ BODY {
   font-weight: 400;
   padding: 3px 5px 3px 5px;
   max-width: 150px;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 5px 0px 5px;
   display: inline-block;
 }
 .complex-class-2 {
@@ -632,8 +632,8 @@ BODY {
   font-weight: 500;
   background-color: #46C563;
   padding: 3px 3px 3px 3px;
-  max-width: 170px;
-  margin: 0px 10px 0px 10px;
+  max-width: 160px;
+  margin: 0px 5px 0px 5px;
 }
 .complex-class-3 {
   font-size: 11px;
@@ -642,8 +642,8 @@ BODY {
   font-weight: 500;
   background-color: #DC4545;
   padding: 3px 3px 3px 3px;
-  max-width: 170px;
-  margin: 10px 10px 0px 10px;
+  max-width: 120px;
+  margin: 5px 5px 0px 5px;
 }
 .complex-class-4 {
   font-size: 11px;
@@ -652,8 +652,8 @@ BODY {
   font-weight: 500;
   background-color: #4C93E8;
   padding: 3px 3px 3px 3px;
-  max-width: 170px;
-  margin: 0px 10px 0px 10px;
+  max-width: 150px;
+  margin: 0px 5px 0px 5px;
 }
 .complex-class-5 {
   font-size: 11px;
@@ -662,8 +662,8 @@ BODY {
   font-weight: 500;
   background-color: #868686;
   padding: 3px 3px 3px 3px;
-  max-width: 170px;
-  margin: 0px 10px 0px 10px;
+  max-width: 140px;
+  margin: 0px 5px 0px 5px;
 }
 .complex-class-6 {
   font-size: 11px;
@@ -672,8 +672,8 @@ BODY {
   font-weight: 500;
   background-color: #7E6047;
   padding: 3px 3px 3px 3px;
-  max-width: 170px;
-  margin: 10px 10px 0px 10px;
+  max-width: 140px;
+  margin: 5px 5px 0px 5px;
 }
 
 .ad-descr {
@@ -992,7 +992,34 @@ BODY {
   -webkit-background-clip: text;
   font-weight: 600;
   font-family: 'Inconsolata', monospace;
+}
+.future_money_keeper {
+  padding-top: 35px;
+  font-size: 35px;
+  text-align: center;
+  background: #fff;
+  opacity: 0.5;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-family: 'Inconsolata', monospace;
   display: inline-block;
+  float: left;
+}
+.old_money_keeper {
+  padding-top: 5px;
+  font-size: 35px;
+  text-align: center;
+  background: #fff;
+  opacity: 0.5;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-family: 'Inconsolata', monospace;
+  display: inline-block;
+  float: left;
 }
 .plus {
   margin-left: 15px;
@@ -1036,6 +1063,7 @@ BODY {
   float: right;
   transition: transform 0.2s;
   animation: mortgage_pushme 2s ease-in-out infinite;
+  margin-top: 40px;
 }
 .minus:hover {
   opacity: 0.9;
@@ -1072,21 +1100,22 @@ BODY {
 
 .slider-container {
   position: relative;
-  width: 600px;
-  height: 400px;
-  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+    text-align: center;
   overflow: hidden;
 }
 
 .slider {
-  max-width: 320px;
+  width: 100%;
+  text-align: center;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
 .slider img {
-  max-width: 300px;
-  height: 300px;
+  width: 100%;
+  text-align: center;
   object-fit: cover;
 }
 

@@ -62,7 +62,7 @@
     </div>
 
     </div>
-    <div style="background: repeating-linear-gradient(45deg, #EBEBEB, #EBEBEB 10px, #BFBFBF 10px, #BFBFBF 20px); padding-bottom: 1px;">
+    <div style="background: linear-gradient(to bottom, #11C8E1, #1140E1, #AB11E1, #E111B2); padding-bottom: 5px;">
     <div class="standart-2">
 
         <a class="standart-title">TimeТека от 0,1%</a>
@@ -83,18 +83,34 @@
 <script type="text/javascript">
 function mortgage_element1_plus() {
   var num = document.getElementById("mortgageone").innerHTML;
+  var old_num = document.getElementById("mortgageold").innerHTML;
+  var futur_num = document.getElementById("mortgagefutur").innerHTML;
   document.getElementById("mortgageone").innerHTML = (Number(num) + 100);
+  document.getElementById("mortgagefutur").innerHTML = (Number(futur_num) + 100);
+  document.getElementById("mortgageold").innerHTML = (Number(old_num) + 100);
 }
 function mortgage_element1_minus() {
   var num = document.getElementById("mortgageone").innerHTML;
+  var old_num = document.getElementById("mortgageold").innerHTML;
+  var futur_num = document.getElementById("mortgagefutur").innerHTML;
   document.getElementById("mortgageone").innerHTML = (Number(num) - 100);
+  document.getElementById("mortgagefutur").innerHTML = (Number(futur_num) - 100);
+  document.getElementById("mortgageold").innerHTML = (Number(old_num) - 100);
 }
 </script>
 
-        <div class="mortgage-plus-minus">
-          <div class="money_keeper" id="mortgageone">
-            16200
+        <div class="mortgage-plus-minus" style="padding-bottom: 200px">
+          <div style="float: left"><div class="future_money_keeper" id="mortgagefutur">
+            14800
           </div>
+          <div class="money_keeper" id="mortgageone">
+            14700
+          </div>
+          <div class="old_money_keeper" id="mortgageold">
+            14600
+          </div>
+        </div>
+        <div style="float: right">
           <div class="plus"  id="mortgage_2element" onclick="mortgage_element1_plus()">
             +
           </div>
@@ -102,12 +118,13 @@ function mortgage_element1_minus() {
             -
           </div>
         </div>
+        </div>
 
     </div>
     <div class="standart-3">
 
         <a class="standart-title">Минус платёж</a>
-        <br><a class="standart-descr">За каждого приведённого человека, взявшего ипотеку в <i><span style="color: #D80000">M</span>-industry</i>, вам предоставляется подарок в виде отмены одного платежа.</a>
+        <br><a class="standart-descr">За каждого приведённого человека, взявшего ипотеку в <i>M-industry</i>, вам предоставляется подарок в виде отмены одного платежа.</a>
         <br><img class="index-img" src="img/st_18.png">
 
     </div>
