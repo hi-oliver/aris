@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Квартиры M-industry ARIS</title>
+    <title>Квартиры М-Индустрия от ARIS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/fav.png">
     <link rel="stylesheet" href="style.css">
@@ -16,18 +16,6 @@
           <th><a href="#" class="back" onclick="history.back();">Назад</a></th>
           <th><a><img class="logo" src="img/m-industry.png"/></a></th>
           <th><a href="#menu"><img class="burger" src="img/burger.png"/></a></th>
-        </tr>
-      </table>
-
-      <div class="dash">
-      </div>
-      <table style="width: 100%;">
-        <tr>
-          <th><a href="#studios" class="many-rooms-url-head">С</a></th>
-          <th><a href="#one-room" class="many-rooms-url-head">1к</a></th>
-          <th><a href="#two-room" class="many-rooms-url-head">2к</a></th>
-          <th><a href="#three-room" class="many-rooms-url-head">3к</a></th>
-          <th><a href="#four-room" class="many-rooms-url-head">4к</a></th>
         </tr>
       </table>
 
@@ -83,12 +71,162 @@
         </div>
         <div class="standart-1Extra">
 
-            <a class="standart-title">Отделка ARIS</a>
-            <br><a class="standart-descr">Все квартиры <i>M-industry</i> передаются с полной отделкой, укомплектованным санузлом и подготовленной кухней.</a>
-            <br><a class="hello-descr hello_url" style="color: #fff; animation: none" href="#otdelka">Посмотреть ›</a>
+            <a class="standart-title">Отделка</a>
+            <br><a class="standart-descr"><i><span style="white-space: nowrap;">М-Индустрия</span></i> передаёт квартиры комфорт-класса с полной отделкой.</a>
+            <br><a class="hello-descr hello_url" style="color: #fff; animation: none" href="#otdelka">Подробнее ›</a>
             <br><img class="index-img" src="img/st_16.png">
         </div>
-        <div class="many-rooms">
+
+        <div class="apart-filter-keeper">
+          <div class="hello-puto" style="background-color: #fff;">
+          <div class="hello-title-1" style="font-weight: 300">Фильтр поиска квартир</div>
+
+          <br><div class="apart-filter">
+
+            <div class="apart-rooms" id="apart-st" onclick="apartstudio()">
+              С
+            </div>
+            <div class="apart-rooms" id="apart-one" onclick="apartsone()">
+              1
+            </div>
+            <div class="apart-rooms" id="apart-two" onclick="apartstwo()">
+              2
+            </div>
+            <div class="apart-rooms" id="apart-three" onclick="apartsthree()">
+              3
+            </div>
+            <div class="apart-rooms" id="apart-four" onclick="apartsfour()">
+              4
+            </div>
+            <div class="company-stats-descr filter-margin">количество комнат</div>
+          </div>
+
+          <div class="apart-filter">
+            <div class="apart-class" id="apart-comfort" onclick="apartscomfort()">
+              Комфорт
+            </div>
+            <div class="apart-class" id="apart-elit" style="opacity:0" onclick="apartselit()">
+              Элитный
+            </div>
+            <div class="company-stats-descr filter-margin">класс жилья</div>
+          </div>
+        </div>
+        </div>
+        <script type="text/javascript">
+        positionstudi = false;
+        function apartstudio() {
+          if (!positionstudi) {
+            document.getElementById('apart-st').style.color = "#EEEEEE";
+            document.getElementById('apart-st').style.background = "#D80000";
+            document.getElementById("studi").style.display = "block";
+            positionstudi = true;
+          } else {
+            document.getElementById('apart-st').style.color = "#D80000";
+            document.getElementById('apart-st').style.background = "#EEEEEE";
+            document.getElementById("studi").style.display = "none";
+            positionstudi = false;
+          }
+
+        }
+
+        positionone = false;
+        function apartsone() {
+          if (!positionone) {
+            document.getElementById('apart-one').style.color = "#EEEEEE";
+            document.getElementById('apart-one').style.background = "#D80000";
+            document.getElementById("one").style.display = "block";
+            positionone = true;
+          } else {
+            document.getElementById('apart-one').style.color = "#D80000";
+            document.getElementById('apart-one').style.background = "#EEEEEE";
+            document.getElementById("one").style.display = "none";
+            positionone = false;
+          }
+
+        }
+
+
+        positiontwo = false;
+        function apartstwo() {
+          if (!positiontwo) {
+            document.getElementById('apart-two').style.color = "#EEEEEE";
+            document.getElementById('apart-two').style.background = "#D80000";
+            document.getElementById("two").style.display = "block";
+            positiontwo = true;
+          } else {
+            document.getElementById('apart-two').style.color = "#D80000";
+            document.getElementById('apart-two').style.background = "#EEEEEE";
+            document.getElementById("two").style.display = "none";
+            positiontwo = false;
+          }
+
+        }
+
+        positionthree = false;
+        function apartsthree() {
+          if (!positionthree) {
+            document.getElementById('apart-three').style.color = "#EEEEEE";
+            document.getElementById('apart-three').style.background = "#D80000";
+            document.getElementById("three").style.display = "block";
+            positionthree = true;
+          } else {
+            document.getElementById('apart-three').style.color = "#D80000";
+            document.getElementById('apart-three').style.background = "#EEEEEE";
+            document.getElementById("three").style.display = "none";
+            positionthree = false;
+          }
+
+        }
+
+        positionfour = false;
+        function apartsfour() {
+          if (!positionfour) {
+            document.getElementById('apart-four').style.color = "#EEEEEE";
+            document.getElementById('apart-four').style.background = "#D80000";
+            document.getElementById("four").style.display = "block";
+            positionfour = true;
+          } else {
+            document.getElementById('apart-four').style.color = "#D80000";
+            document.getElementById('apart-four').style.background = "#EEEEEE";
+            document.getElementById("four").style.display = "none";
+            positionfour = false;
+          }
+
+        }
+
+        </script>
+        <!--     positionfive = false;
+        function apartscomfort() {
+          if (!positionfive) {
+            document.getElementById('apart-comfort').style.color = "#EEEEEE";
+            document.getElementById('apart-comfort').style.background = "#D80000";
+            document.getElementsByClassName("five").style.display = "block";
+            positionfive = true;
+          } else {
+            document.getElementById('apart-comfort').style.color = "#D80000";
+            document.getElementById('apart-comfort').style.background = "#EEEEEE";
+            document.getElementsByClassName("five").style.display = "none";
+            positionfive = false;
+          }
+
+        }
+
+        positionsix = false;
+        function apartselit() {
+          if (!positionsix) {
+            document.getElementById('apart-elit').style.color = "#EEEEEE";
+            document.getElementById('apart-elit').style.background = "#D80000";
+            document.getElementById("six").style.display = "block";
+            positionsix = true;
+          } else {
+            document.getElementById('apart-elit').style.color = "#D80000";
+            document.getElementById('apart-elit').style.background = "#EEEEEE";
+            document.getElementById("six").style.display = "none";
+            positionsix = false;
+          }
+
+        } -->
+  <!--      <div class="many-rooms">
           <a class="flats-title">Какую квартиру вы ищете?</a>
           <div class="room-keeper" style="text-align: left">
           <a class="many-rooms-url" href="#studios">Студии ›</a>
@@ -105,15 +243,15 @@
           </div>
           <a class="many-rooms-url" href="#four-room">Четырёхкомнатные ›</a>
         </div>
-      </div>
-        <div class="anchor-flats" id="studios">
+      </div> -->
 
-        </div>
         <div class="flats">
-          <a class="flats-title">Квартиры-студии</a><br><br><br>
+
+<div id="studi">
 
 
-          <div class="flats-with-shadow">
+
+          <div class="flats-with-shadow" class="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -143,7 +281,7 @@
           </div>
           <br><br><br><br>
 
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" class="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -173,7 +311,7 @@
           </div>
           <br><br><br><br>
 
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" class="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -202,7 +340,7 @@
           <div class="flats-price-aparts">3 922 000 —<br>4 171 000</div><br>
           </div>
 <br><br><br><br>
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" class="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -229,15 +367,42 @@
           <br><br>
           </div>
           <div class="flats-price-aparts">3 004 000 —<br>3 294 000</div><br>
-          </div>
+          </div><br></div>
 
 
-        <div class="anchor-flats" id="one-room">
+<div id="one">
 
-        </div>
-          <a class="flats-title">1-к квартиры</a><br><br><br>
 
-          <div class="flats-with-shadow">
+    <br><br><div class="flats-with-shadow" id="six">
+      <div class="fws-general">
+    <div style="padding-top: 5px"></div>
+    <div class="complex-class-keeper">
+    <div class="complex-class" style="background-color: #1C95CA">Элитный</div><div class="complex-class" style="margin: 0px 10px 10px 0px; background-color: #1AD937">Отделка в подарок!</div>
+    </div>
+    <div class="image-in-aparts"><img class="flats-img" src="img/fl_orp1.png" style="height: 100px"></div>
+    <div class="complex-naming-in-aparts" style="text-align: left"><i><span style="color: #D80000"> M</span>i</i>. Поэма у<br>трёх озёр</div>
+    <br><br><div class="apart-naming-in-aparts" style="text-align: left">1-к ELIT1-01</div>
+    <br><div class="table-aparts-info-keeper">
+
+      <table class="table-aparts-info">
+        <tr>
+          <td id="left">Корпус</td><td id="right">1</td>
+        </tr>
+        <tr>
+          <td id="left">Этаж</td><td id="right">2-18</td>
+        </tr>
+        <tr>
+          <td id="left">Площадь, м²</td><td id="right"> 33,9</td>
+        </tr>
+      </table>
+
+    </div>
+    <br><br>
+    </div>
+    <div class="flats-price-aparts">13 <span>666</span> 000 —<br>14 <span>964</span> 000</div><br>
+  </div>
+    <br><br>
+          <br><br><div class="flats-with-shadow" id="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -267,7 +432,7 @@
           </div>
           <br><br><br><br>
 
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" id="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -297,7 +462,7 @@
           </div>
           <br><br><br><br>
 
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" id="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -327,7 +492,7 @@
           </div>
           <br><br><br><br>
 
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" id="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -357,7 +522,7 @@
           </div>
           <br><br><br><br>
 
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" id="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -384,15 +549,11 @@
           <br><br>
           </div>
           <div class="flats-price-aparts">4 978 000 —<br>5 025 000</div><br>
-          </div>
+        </div> <br> </div>
 
 
-
-    <div class="anchor-flats" id="two-room">
-
-    </div>
-          <a class="flats-title">2-к квартиры</a><br><br><br>
-          <div class="flats-with-shadow">
+<div id="two">
+    <br><br> <div class="flats-with-shadow" id="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -422,7 +583,7 @@
           </div>
           <br><br><br><br>
 
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" id="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -452,7 +613,7 @@
           </div>
           <br><br><br><br>
 
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" id="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -482,7 +643,7 @@
           </div>
           <br><br><br><br>
 
-          <div class="flats-with-shadow">
+          <div class="flats-with-shadow" id="five">
             <div class="fws-general">
           <div style="padding-top: 5px"></div>
           <div class="complex-class-keeper">
@@ -509,15 +670,11 @@
           <br><br>
           </div>
           <div class="flats-price-aparts">7 218 000 —<br>9 150 000</div><br>
-          </div>
+          </div><br>
 
-
-      <div class="anchor-flats" id="three-room">
-
-      </div>
-      <a class="flats-title">3-к квартиры</a><br><br><br>
-
-      <div class="flats-with-shadow">
+</div>
+<div id="three">
+      <br><br> <div class="flats-with-shadow" id="five">
         <div class="fws-general">
       <div style="padding-top: 5px"></div>
       <div class="complex-class-keeper">
@@ -547,7 +704,7 @@
       </div>
       <br><br><br><br>
 
-      <div class="flats-with-shadow">
+      <div class="flats-with-shadow" id="five">
         <div class="fws-general">
       <div style="padding-top: 5px"></div>
       <div class="complex-class-keeper">
@@ -575,11 +732,10 @@
       </div>
       <div class="flats-price-aparts">9 279 000 —<br>9 556 000</div><br>
       </div>
-      <div class="anchor-flats" id="four-room">
+    <br></div>
+    <div id="four">
 
-      </div>
-      <a class="flats-title">4-к квартиры</a><br><br><br>
-      <div class="flats-with-shadow">
+      <br><br> <div class="flats-with-shadow" id="five">
         <div class="fws-general">
       <div style="padding-top: 5px"></div>
       <div class="complex-class-keeper">
@@ -609,7 +765,7 @@
       </div>
       <br><br><br><br>
 
-      <div class="flats-with-shadow">
+      <div class="flats-with-shadow" id="five">
         <div class="fws-general">
       <div style="padding-top: 5px"></div>
       <div class="complex-class-keeper">
@@ -637,65 +793,12 @@
       </div>
       <div class="flats-price-aparts">18 <span>167</span> 000 —<br>19 <span>002</span> 301</div><br>
       </div>
-      <br><br><br><br>
+      <br>
 
 
-
+</div></div></div>
         </div>
-        <main>
-          <div class="house-ad-extra" id="otdelka">
-        <br><br><br><br>
-            <div class="hello-puto" style="background-color: #fff;">
 
-
-                <div class="hello-title-1" style="color: #40342D; font-weight: 300">Пример отделки от застройщика</div>
-          <br><div class="slider-container">
-          <div class="slider">
-            <img src="img/otdelka-sanuzel.png" alt="Отделка санузла">
-            <img src="img/otdelka-kuhnya.png" alt="Отделка кухни">
-            <img src="img/otdelka-koridor.png" alt="Отделка коридора">
-            <img src="img/otdelka-komnata.png" alt="Отделка комнаты">
-            <img src="img/otdelka-balkon.png" alt="Отделка балкона">
-          </div>
-          <div class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</div>
-          <div class="next-button" aria-label="Посмотреть следующий слайд">&gt</div>
-        </div>
-        </div>
-        </div>
-        </main>
-
-        <script>
-        const slider = document.querySelector('.slider');
-        const prevButton = document.querySelector('.prev-button');
-        const nextButton = document.querySelector('.next-button');
-        const slides = Array.from(slider.querySelectorAll('img'));
-        const slideCount = slides.length;
-        let slideIndex = 0;
-
-        prevButton.addEventListener('click', showPreviousSlide);
-        nextButton.addEventListener('click', showNextSlide);
-
-        function showPreviousSlide() {
-          slideIndex = (slideIndex - 1 + slideCount) % slideCount;
-          updateSlider();
-        }
-
-        function showNextSlide() {
-          slideIndex = (slideIndex + 1) % slideCount;
-          updateSlider();
-        }
-
-        function updateSlider() {
-          slides.forEach((slide, index) => {
-            if (index === slideIndex) {
-              slide.style.display = 'block';
-            } else {
-              slide.style.display = 'none';
-            }
-          });
-        }
-
-        updateSlider();</script>
 
 
 
@@ -709,7 +812,7 @@
              | <a class="cellar-url" href="/aris/mortgage.html">Ипотечные программы</a>
              | <a class="cellar-url" href="/aris/about.html">О компании</a></div>
 
-          <div style="padding: 10px 0px 10px 0px">ПАО "Группа АРИС"</div>
+          <div style="padding: 10px 0px 10px 0px">Застройщик М-Индустрия<br>ПАО "Группа АРИС"</div>
           <div style="padding: 10px 0px 10px 0px">© Сайт разработан и принадлежит Сизову Андрею <br>Обратная связь: smartaleck@internet.ru</div>
         </div>
   </body>

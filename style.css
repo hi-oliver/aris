@@ -208,7 +208,7 @@ BODY {
   background-color: #1B1948;
   background: linear-gradient(to bottom right, #D875E8, #6D4CE8);
   padding-left: 25px;
-  padding-top: 95px;
+  padding-top: 65px;
   padding-right: 25px;
   padding-bottom: 5px;
   animation: welcome-to-aris 7s ease-in-out infinite;
@@ -1141,4 +1141,46 @@ BODY {
 
 .next-button {
   right: 10px;
+}
+.apart-rooms {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  background: #EEEEEE;
+  color: #D80000;
+  width: 25px;
+  font-family: 'Unbounded', cursive;
+  font-size: 20px;
+}
+.apart-class {
+  margin: 15px 0px 0px 0px;
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  background: #EEEEEE;
+  color: #D80000;
+  width: 108px;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+  font-size: 12px;
+}
+#apart-comfort {
+  background: #D80000;
+  color: #EEEEEE;
+}
+.filter-margin {
+  padding-left: 30px;
+}
+#studi {
+  display: none;
+}
+#one {
+  display: none;
+}
+#two {
+  display: none;
+}
+#three {
+  display: none;
+}
+#four {
+  display: none;
 }
