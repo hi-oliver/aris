@@ -151,10 +151,10 @@ BODY {
 }
 .hello {
   margin: 0px 10px 0px 10px;
-  background: linear-gradient(to bottom left, rgba(255, 0, 230), rgba(0, 133, 255));
+  background: linear-gradient(to bottom left, #E91818, #B018E9);
   background-position: center;
   padding-left: 25px;
-  padding-top: 10px;
+  padding-top: 40px;
   padding-right: 25px;
   animation: welcome-to-aris 7s ease-in-out infinite;
   background-size: 300%;
@@ -299,7 +299,8 @@ BODY {
   margin: 0px 10px 0px 10px;
   background-color: #fff;
   padding-left: 25px;
-  padding-top: 85px;
+  padding-top: 25px;
+  padding-bottom: 20px;
   padding-right: 25px;
 }
 .house-ad-extra {
@@ -330,7 +331,7 @@ BODY {
   padding: 0px 0px 110px 0px;
 }
 .flats-with-shadow:hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
   box-shadow: 0em 0em 10px rgba(122,122,122,0.4);
 }
 .hello-title {
@@ -877,7 +878,6 @@ BODY {
 }
 .many-rooms-url:hover {
   text-decoration: underline;
-  opacity: 0.5;
 }
 .room-keeper {
   margin: 25px 25px 25px 25px;
@@ -1183,4 +1183,11 @@ BODY {
 }
 #four {
   display: none;
+}
+.preview-img-keeper {
+  max-width: 320px;
+  margin: auto;
+}
+.preview-img {
+  width: 100%
 }
