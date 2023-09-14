@@ -89,7 +89,23 @@ BODY {
   color: #000000;
   font-family: 'Unbounded', cursive;
   font-weight: 400;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
+}
+.slow-dash {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(to top, #F5F5F5, #FFFFFF);
+
+}
+.slow-dash-inv {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to bottom, #F2F2F2, #FFFFFF);
+
 }
 .cellar-url {
   text-decoration: none;
@@ -856,16 +872,31 @@ BODY {
   padding-left: 100px;
 }
 .many-rooms {
-  padding: 25px 25px 25px 25px;
+  max-width: 420px;
+  margin: auto;
+  padding-bottom: 20px;
 }
 .many-rooms-url {
-  font-size: 13px;
-  text-align: center;
-  color: #4F4F4F;
+  padding: 8px 0px 8px 0px ;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+  display: inline-block;
+}
+.many-rooms-url-to {
+  padding: 11px 0px 1px 0px ;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 8px;
+  color: #000000;
   font-family: 'Unbounded', cursive;
   font-weight: 600;
-  text-decoration: none;
-  margin: 25px 25px 25px 25px;
+  display: inline-block;
+  float: right
 }
 .many-rooms-url-head {
   font-size: 13px;
@@ -874,10 +905,9 @@ BODY {
   font-family: 'Unbounded', cursive;
   font-weight: 600;
   text-decoration: none;
-  margin: 5px 5px 5px 5px;
+
 }
 .room-keeper {
-  margin: 25px 25px 25px 25px;
 }
 
 #container {
@@ -1105,6 +1135,7 @@ BODY {
 
 .slider {
   width: 100%;
+  height: 420px;
   text-align: center;
   display: flex;
   transition: transform 0.5s ease-in-out;
