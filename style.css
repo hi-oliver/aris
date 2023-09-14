@@ -876,9 +876,6 @@ BODY {
   text-decoration: none;
   margin: 5px 5px 5px 5px;
 }
-.many-rooms-url:hover {
-  text-decoration: underline;
-}
 .room-keeper {
   margin: 25px 25px 25px 25px;
 }
@@ -1190,4 +1187,40 @@ BODY {
 }
 .preview-img {
   width: 100%
+}
+.cellar-urls-keeper {
+  text-align: left;
+   max-width: 420px;
+   margin: auto;
+}
+.cellar-main-text-keeper {
+  text-align: left;
+   max-width: 420px;
+   margin: auto;
+}
+.cellar-main-text {
+   margin-left: 10px;
+   margin-right: 10px;
+   font-size: 10px;
+}
+.cellar-urls {
+  padding: 2px 0px 2px 0px ;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 500;
+  display: inline-block;
+}
+.cellar-urls-to {
+  margin-right: 10px;
+  padding: 2px 0px 2px 0px ;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Unbounded', cursive;
+  font-weight: 600;
+  float: right;
+  display: inline-block;
 }
